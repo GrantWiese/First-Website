@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    line-height: 1.6;
+    background-color: #121212; /* Darker background for consistency */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(to right, #ff8c00, #ff2d55); /* Gradient */
+    color: white;
+    padding: 3rem 1rem; /* Increased padding */
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+header button {
+    background-color: #ffffff;
+    color: #ff2d55;
+    font-size: 1.1rem;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header button:hover {
+    background-color: #ff2d55;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    background-color: #222; /* Dark background for sections */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #ff2d55; /* Primary theme color */
+    border-bottom: 2px solid #ff2d55;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    color: #ddd; /* Lighter color for text */
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ddd; /* Lighter footer text */
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #111;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff2d55; /* Hover color */
+}
+
+/* Home Button Style */
+.home-btn {
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #ff2d55;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #ff8c00;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    section h2 {
+        font-size: 1.6rem;
+    }
+    section ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    section h2 {
+        font-size: 1.4rem;
+    }
+    section ul li {
+        font-size: 0.85rem;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+}

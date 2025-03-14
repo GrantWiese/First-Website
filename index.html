@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Health</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="citations.html">Citations</a></li>
+            <a href="index.html" class="home-btn">Home</a>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Achieve Your Fitness Goals</h1>
+        <p>Join our free fitness challenge and start your journey today!</p>
+        <button id="openModal">Sign Up</button>
+    </header>
+    
+    <section id="introduction">
+        <h2>Welcome to Your Fitness Journey</h2>
+        <p>Fitness is not just about working out; it's about adopting a healthy lifestyle...</p>
+    </section>
+    
+    <section id="workout-tips">
+        <h2>Workout & Nutrition</h2>
+        <div class="grid">
+            <div>💪 Strength Training</div>
+            <div>🏃‍♂️ Cardio Workouts</div>
+            <div>🥗 Healthy Nutrition</div>
+        </div>
+        <p>Building muscle, improving endurance, and eating right are key components of a balanced fitness plan.</p>
+    </section>
+    
+    <section id="gallery">
+        <h2>Success Stories</h2>
+        <div class="gallery-grid">
+            <img src="images/noeldeyzelpic.png" alt="Workout Image 1">
+            <img src="images/arnold2.png" alt="Workout Image 2">
+            <img src="images/CBumpic.webp" alt="Workout Image 3">
+        </div>
+        <p style="margin-top: 20px;">Meet our community members who have transformed their lives through fitness!</p>
+    </section>
+    
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>What fitness level is this program for?</summary>
+            <p>Our program is designed for all fitness levels, from beginners to advanced athletes.</p>
+        </details>
+        <details>
+            <summary>Do I need equipment?</summary>
+            <p>Some workouts require equipment, but we also offer bodyweight alternatives.</p>
+        </details>
+        <details>
+            <summary>How much time does it take?</summary>
+            <p>Our workouts range from 30 to 90 minutes, depending on your schedule.</p>
+        </details>
+    </section>
+    
+    <!-- Modal for Sign Up -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="goal">Fitness Goal:</label>
+                <select id="goal">
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                    <option value="endurance">Endurance</option>
+                </select>
+                
+                <button type="submit">Join Now</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fitness Challenge. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const modal = document.getElementById("signupModal");
+        const openModal = document.getElementById("openModal");
+        const closeModal = document.querySelector(".close");
+
+        openModal.addEventListener("click", () => {
+            modal.style.display = "block";
+        });
+
+        closeModal.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
